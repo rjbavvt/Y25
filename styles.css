@@ -3,6 +3,8 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
+    background-color: black;
+    color: white;
 }
 
 /* Menú fijo */
@@ -12,14 +14,15 @@ nav {
     left: 0;
     width: 100%;
     background-color: black;
-    padding: 20px 0;
+    padding: 10px 0;
     z-index: 1000;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 nav img {
-    max-height: 50px;
-    margin: 0 10px;
+    max-height: 40px;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
@@ -30,14 +33,29 @@ nav img:hover {
 
 /* Secciones */
 section {
-    background-color: black;
-    padding: 100px 20px 20px 10px;
+    padding: 50px 10px 20px; /* Reduce espacio entre las secciones */
     text-align: center;
 }
 
-img {
-    max-width: 90%;
+section img {
+    max-width: 100%;
     height: auto;
     margin-bottom: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav img {
+        max-height: 30px; /* Reduce tamaño del menú en dispositivos pequeños */
+    }
+
+    section {
+        padding: 30px 10px 10px; /* Reduce aún más el espacio entre secciones */
+    }
+
+    section img {
+        max-width: 95%; /* Ajusta el ancho de las imágenes en pantallas pequeñas */
+    }
 }
