@@ -17,8 +17,14 @@ nav {
     padding: 10px 0;
     z-index: 1000;
     display: flex;
+    justify-content: center; /* Alinea los iconos horizontalmente */
+    gap: 15px; /* Espaciado entre iconos */
+}
+
+nav a {
+    display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
 }
 
 nav img {
@@ -47,6 +53,11 @@ section img {
 
 /* Responsiveness */
 @media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap; /* Permite ajustar los iconos si es necesario en pantallas más pequeñas */
+        gap: 10px; /* Reduce el espacio entre los iconos */
+    }
+
     nav img {
         max-height: 30px; /* Reduce tamaño del menú en dispositivos pequeños */
     }
