@@ -1,72 +1,59 @@
-/* General Styles */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-    background-color: black;
-    color: white;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrolleable Menu with Sections</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* Menú fijo */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    padding: 10px 0;
-    z-index: 1000;
-    display: flex;
-    justify-content: center; /* Alinea los iconos horizontalmente */
-    gap: 15px; /* Espaciado entre iconos */
-}
+    <!-- Menú con imágenes -->
+    <nav>
+        <a href="#section1"><img src="icon_entrada.png" alt="Section 1"></a>
+        <a href="#section2"><img src="icon_platofuerte.png" alt="Section 2"></a>
+        <a href="#section3"><img src="icon_cocteles.png" alt="Section 3"></a>
+        <a href="#section6"><img src="icon_bebidas.png" alt="Section 6"></a>
+        <a href="#section7"><img src="icon_licores.png" alt="Section 7"></a>
+        <a href="#section8"><img src="icon_cafes.png" alt="Section 8"></a>
+    </nav>
 
-nav a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    <!-- Secciones con imágenes -->
+    <section id="section1">
+        <img src="page_1.jpg" alt="Page 1">
+    </section>
 
-nav img {
-    max-height: 40px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
+    <section id="section2">
+        <img src="page_2.jpg" alt="Page 2">
+    </section>
 
-nav img:hover {
-    transform: scale(1.1);
-}
+    <section id="section3">
+        <img src="page_3.jpg" alt="Page 3">
+    </section>
 
-/* Secciones */
-section {
-    padding: 50px 10px 20px; /* Reduce espacio entre las secciones */
-    text-align: center;
-}
+    <section id="section4">
+        <img src="page_4.jpg" alt="Page 4">
+    </section>
 
-section img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
-}
+    <section id="section5">
+        <img src="page_5.jpg" alt="Page 5">
+    </section>
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    nav {
-        flex-wrap: wrap; /* Permite ajustar los iconos si es necesario en pantallas más pequeñas */
-        gap: 10px; /* Reduce el espacio entre los iconos */
-    }
+    <section id="section6">
+        <img src="page_6.jpg" alt="Page 6">
+    </section>
 
-    nav img {
-        max-height: 30px; /* Reduce tamaño del menú en dispositivos pequeños */
-    }
+    <section id="section7">
+        <img src="page_7.jpg" alt="Page 7">
+    </section>
 
-    section {
-        padding: 30px 10px 10px; /* Reduce aún más el espacio entre secciones */
-    }
+    <section id="section8">
+        <img src="page_8.jpg" alt="Page 8">
+    </section>
 
-    section img {
-        max-width: 95%; /* Ajusta el ancho de las imágenes en pantallas pequeñas */
-    }
-}
+    <section id="section9">
+        <img src="page_9.jpg" alt="Page 9">
+    </section>
+
+</body>
+</html>
